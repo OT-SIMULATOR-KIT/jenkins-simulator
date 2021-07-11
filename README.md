@@ -1,35 +1,45 @@
 # jenkins-simulator
 
+## Problem Statement
 Create a utility to manage manual & scheduled tasks, this utility should have below features:
-    - Submission of tasks, below would be attribute of a task
+### Submission of tasks
+Below would be attribute of a task
         - Task Name
         - Path of task Script
         - Task Type (Manual/Scheduled)
             - In case of scheduled, cron expression of task details
         - Notification
             - Success & Failed execution of task over email
-    - Listing of all the tasks submitted
+### Listing of all the tasks submitted
         - Currently running tasks
         - All tasks
         - Successfully executed tasks
         - Failed tasks
-    - Removal of a task
-    - Execution history of a specific task
+### Removal of a task
+### Execution history of a specific task
         - task execution number
         - time of excution
         - time when task was ended
         - total time taken
         - Status of Task (Success/Failure/Running)
-    - Logs of specific excution of task
-    - Come up with other features you can think of
-Example
-- Submit a task
+### Logs of specific excution of task
+### Come up with other features you can think of
+
+## Example
+### Submit a task
 ./TaskManager.sh -a task.meta
 task.meta can be a json,yaml,properties as per your wish & liking
-- List tasks
+
+### List tasks
 ./TaskManager.sh -l 
-- Delete a task
+
+### Execute tasks
+./TaskManager.sh -e <task_name> 
+
+### Delete a task
 ./TaskManager.sh -d <task_name>
-- List executions history of tasks
+
+### List executions history of tasks
 ./TaskManager.sh -h <task_name> 
+
 Feel free to add your own assumptions & modifications
