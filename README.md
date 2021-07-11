@@ -4,24 +4,30 @@
 Create a utility to manage manual & scheduled tasks, this utility should have below features:
 ### Submission of tasks
 Below would be attribute of a task
+```
         - Task Name
         - Path of task Script
         - Task Type (Manual/Scheduled)
             - In case of scheduled, cron expression of task details
         - Notification
             - Success & Failed execution of task over email
+```
 ### Listing of all the tasks submitted
+```
         - Currently running tasks
         - All tasks
         - Successfully executed tasks
         - Failed tasks
+```
 ### Removal of a task
 ### Execution history of a specific task
+```
         - task execution number
         - time of excution
         - time when task was ended
         - total time taken
         - Status of Task (Success/Failure/Running)
+```
 ### Logs of specific excution of task
 ### Come up with other features you can think of
 
