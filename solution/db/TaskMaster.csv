@@ -1,5 +1,5 @@
 TASK_NAME,TRIGGER_TYPE,TASK_SCRIPT_PATH
-task1,manual,example1.sh
-task2,manual,example1.sh
-task3,scheduled,example2.sh
-task4,scheduled,example2.sh
+task1,manual,test/scenario1/example1.sh
+task2,manual,test/scenario1/example2.sh
+task3,scheduled,test/scenario1/example3.sh
+task4,scheduled,test/scenario1/example4.sh

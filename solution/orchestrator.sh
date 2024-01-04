@@ -2,6 +2,7 @@
 
 source functions/TaskDao.sh
 source functions/fileDb.sh
+source functions/ScriptExecutor.sh
 
 OPERATION=$1
 
@@ -13,5 +14,6 @@ getTaskMasterData)
     getTaskMasterData $2
 ;;
 executeTask)
-    getTaskScript $2
+    scriptPath=`getTaskScript $2`
+    executeScript ${scriptPath}
 esac
