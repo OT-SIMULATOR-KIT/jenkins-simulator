@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source functions/TaskDao.sh
+source functions/fileDb.sh
 
 OPERATION=$1
 
