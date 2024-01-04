@@ -10,5 +10,5 @@ function getRecordsInTable() {
     local searchValue=$2
     local table=$3
 
-    csvsql --query "SELECT * FROM ${table} where ${column}='${searchValue}'" ./db/${table}.csv
+    csvsql --query "SELECT * FROM ${table} where ${column}='${searchValue}'" ./db/${table}.csv | tail -n+2
 }

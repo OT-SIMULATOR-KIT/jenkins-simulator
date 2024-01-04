@@ -12,5 +12,7 @@ function saveTaskMasterData() {
 
 function getTaskMasterData() {
     local TASK_NAME=$1
+
+    echo "User wants to get details of task: ${TASK_NAME}"
     getRecordsInTable TASK_NAME ${TASK_NAME} ${TASK_MASTER_TABLE}
 }
