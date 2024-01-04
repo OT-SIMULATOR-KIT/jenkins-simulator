@@ -1,4 +1,4 @@
-TASK_MASTER_TABLE=../db/TaskMaster.db
+TASK_MASTER_TABLE=TaskMaster
 
 function saveTaskMasterData() {
     local TASK_NAME=$1
