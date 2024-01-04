@@ -1,8 +1,4 @@
 TASK_NAME,TRIGGER_TYPE,TASK_SCRIPT_PATH
-task1,manual,orchestrator.sh
-task2,scheduled,orchestrator.sh
-task3,manual,orchestrator.sh
-task4,manual,orchestrator.sh
-task5,manual,orchestrator.sh
-task6,manual,orchestrator.sh
-task7,manual,orchestrator.sh
+task1,manual,abc.sh
+task1,manual,abc.sh
+task1,scheduled,abc.sh

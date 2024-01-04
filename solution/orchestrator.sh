@@ -5,6 +5,17 @@ source functions/fileDb.sh
 
 OPERATION=$1
 
-# saveTaskMasterData $1 $2 $3
+case $OPERATION in
+add)
+    echo "User wants to add task"
+    saveTaskMasterData $2 $3 $4
+;;
+getTaskMetaData)
+    echo "User wants to get task metadata"
+    getTaskMasterData $2
+;;
+executeTask)
+    echo "User wants to execute task"
+esac
 
-getTaskMasterData $1
+# executeTask $2
