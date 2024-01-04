@@ -5,5 +5,6 @@ source functions/fileDb.sh
 
 OPERATION=$1
 
-saveTaskMasterData $1 $2 $3
+# saveTaskMasterData $1 $2 $3
 
+getTaskMasterData $1
