@@ -1,4 +1,5 @@
 function executeScript() {
     local SCRIPT_PATH=$1
-    ./${SCRIPT_PATH}
+    local LOG_FILE=$2
+    ./${SCRIPT_PATH} > ${LOG_FILE}
 }
