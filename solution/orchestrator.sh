@@ -13,7 +13,5 @@ getTaskMasterData)
     getTaskMasterData $2
 ;;
 executeTask)
-    echo "User wants to execute task"
+    getTaskScript $2
 esac
-
-# executeTask $2
