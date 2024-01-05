@@ -1,6 +1,6 @@
 TASK_NAME,EXECUTION_NO,LOG_LOCATION
-task1,61,./logs/task1/61.log
-task2,62,./logs/task2/62.log
-task2,63,./logs/task2/63.log
-task3,64,./logs/task3/64.log
-task4,65,./logs/task4/65.log
+task1,1,./logs/task1/1.log
+task2,2,./logs/task2/2.log
+task2,3,./logs/task2/3.log
+task3,4,./logs/task3/4.log
+task4,5,./logs/task4/5.log

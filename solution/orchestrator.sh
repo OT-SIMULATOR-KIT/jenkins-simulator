@@ -8,7 +8,7 @@ source functions/fileDb.sh
 source functions/ScriptExecutor.sh
 source functions/logger.sh
 source functions/TaskExecutionDao.sh
-
+source functions/function.sh
 OPERATION=$1
 
 case $OPERATION in
@@ -25,4 +25,8 @@ executeTask)
 getTaskExecutionHistory)
     getTaskExecutionHistory $2
 ;;
+getTaskExecutionLogs)
+    printTaskExecutionLog $2 $3
+;;
 esac
+pause

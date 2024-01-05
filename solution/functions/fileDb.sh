@@ -20,3 +20,10 @@ function getColumnValuesInTableForAColumn() {
 
     csvsql --query "SELECT ${columnFetched} FROM ${table} where ${columnSearched}='${searchValue}'" ./db/${table}.csv | tail -n+2
 }
+
+function getRecordsInTableForAQuery() {
+    local query="$1"
+    local table=$2
+    local columnFetched=$3
+    csvsql --query "SELECT ${columnFetched} FROM ${table} where ${query}'" ./db/${table}.csv | tail -n+2
+}
