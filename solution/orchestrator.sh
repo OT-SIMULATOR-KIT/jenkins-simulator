@@ -1,7 +1,8 @@
 #!/bin/bash
 LOG_BASE_DIR=./logs
-
 LOG_FILE=${LOG_BASE_DIR}/orchestrator.log
+
+EXECUTION_NO=1
 source functions/TaskDao.sh
 source functions/fileDb.sh
 source functions/ScriptExecutor.sh
@@ -18,9 +19,5 @@ getTaskMasterData)
 ;;
 executeTask)
     TASK_NAME=$2
-    scriptPath=`getTaskScript ${TASK_NAME}`
-    TASK_LOG_DIR=${LOG_BASE_DIR}/${TASK_NAME}
-    mkdir -p ${TASK_LOG_DIR}
-    TASK_LOG_FILE=${TASK_LOG_DIR}/1.log
-    executeScript ${scriptPath} ${TASK_LOG_FILE}
+    executeScript ${TASK_NAME}
 esac
