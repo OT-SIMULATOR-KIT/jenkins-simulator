@@ -9,6 +9,8 @@ function executeScript() {
     TASK_LOG_FILE=${TASK_LOG_DIR}/${EXECUTION_NO}.log
     logInfoMessage "Operation:Execute Task Task Name:${TASK_NAME} Task Script:${scriptPath} Log File: ${TASK_LOG_FILE}"
     ./${scriptPath} > ${TASK_LOG_FILE}
+
+    saveTaskExecutionData ${TASK_NAME} ${EXECUTION_NO} ${TASK_LOG_FILE}
 }
 
 function getNextExecutionNo() {

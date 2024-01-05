@@ -7,6 +7,7 @@ source functions/TaskDao.sh
 source functions/fileDb.sh
 source functions/ScriptExecutor.sh
 source functions/logger.sh
+source functions/TaskExecutionDao.sh
 
 OPERATION=$1
 
