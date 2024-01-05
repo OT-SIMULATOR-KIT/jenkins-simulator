@@ -1,8 +1,11 @@
 #!/bin/bash
 LOG_BASE_DIR=./logs
+
+LOG_FILE=${LOG_BASE_DIR}/orchestrator.log
 source functions/TaskDao.sh
 source functions/fileDb.sh
 source functions/ScriptExecutor.sh
+source functions/logger.sh
 
 OPERATION=$1
 
