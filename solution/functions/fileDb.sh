@@ -4,15 +4,15 @@ function saveRecordInTable() {
     echo "${record}" >> ./db/${table}.csv
 }
 
-function getRecordsInTable() {
-    local column=$1
+function getRecordsInTableForAColumn() {
+    local searchColumn=$1
     local searchValue=$2
     local table=$3
 
-    csvsql --query "SELECT * FROM ${table} where ${column}='${searchValue}'" ./db/${table}.csv | tail -n+2
+    csvsql --query "SELECT * FROM ${table} where ${searchColumn}='${searchValue}'" ./db/${table}.csv | tail -n+2
 }
 
-function getColumnInTable() {
+function getColumnValuesInTableForAColumn() {
     local columnSearched=$1
     local columnFetched=$2
     local searchValue=$3

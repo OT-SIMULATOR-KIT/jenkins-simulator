@@ -8,6 +8,8 @@ pushd ../..
     ./orchestrator.sh executeTask task1
     ./orchestrator.sh executeTask task2
     ./orchestrator.sh executeTask task2
+    ./orchestrator.sh getTaskExecutionHistory task1
+    ./orchestrator.sh getTaskExecutionHistory task2
     ./orchestrator.sh add task3 scheduled test/scenario1/example3.sh
     ./orchestrator.sh executeTask task3
     ./orchestrator.sh add task4 scheduled test/scenario1/example4.sh

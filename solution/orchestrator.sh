@@ -21,4 +21,8 @@ getTaskMasterData)
 executeTask)
     TASK_NAME=$2
     executeScript ${TASK_NAME}
+;;
+getTaskExecutionHistory)
+    getTaskExecutionHistory $2
+;;
 esac

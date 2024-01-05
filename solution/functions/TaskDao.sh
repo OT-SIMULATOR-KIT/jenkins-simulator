@@ -13,11 +13,11 @@ function getTaskMasterData() {
     local TASK_NAME=$1
 
     logInfoMessage "Operation:Get Task Task Name:${TASK_NAME}"
-    getRecordsInTable TASK_NAME ${TASK_NAME} ${TASK_MASTER_TABLE}
+    getRecordsInTableForAColumn TASK_NAME ${TASK_NAME} ${TASK_MASTER_TABLE}
 }
 
 function getTaskScript() {
     local TASK_NAME=$1
     logInfoMessage "Operation:Get Task Script Task Name:${TASK_NAME}"
-    getColumnInTable TASK_NAME TASK_SCRIPT_PATH ${TASK_NAME} ${TASK_MASTER_TABLE}
+    getColumnValuesInTableForAColumn TASK_NAME TASK_SCRIPT_PATH ${TASK_NAME} ${TASK_MASTER_TABLE}
 }
